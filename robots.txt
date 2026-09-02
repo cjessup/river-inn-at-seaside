@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kestrelintegrations.github.io/river-inn-at-seaside/sitemap.xml

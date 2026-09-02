@@ -1,0 +1,16 @@
+I'll build a self-contained static demo from confirmed live-site facts only. First I'm fetching the live property, checking this folder, and gathering peer/guideline context.Homepage confirms the Duda placeholders and the desk number. Next IΓÇÖll pull rooms, contact, Cloudbeds, and any local guideline files.I have room types and amenities from the live site and Cloudbeds. Next IΓÇÖll read the motel guidelines, remaining property pages, and a peer demo for structure.Guidelines and room inventory are in. IΓÇÖll pull remaining live pages and a lodging demoΓÇÖs CSS/HTML so this site matches the builderΓÇÖs conversion pattern.I have the confirmed inventory and conversion pattern. Next IΓÇÖll generate original visuals (no scraped photos) and start building the static pages.Hero and interiors look like a coastal lodge. IΓÇÖll enlarge the inn to a 48-room scale, clean the sign, and generate the remaining room and amenity shots.Images are in place. Next IΓÇÖll name the assets, then write CSS, JS, and the pages.The playground shot has a fake inn name on the building. IΓÇÖll remove that, then write the site files.Assets are named. Next IΓÇÖll write CSS, JS, and the page generator.Pages are generated. IΓÇÖll check for conversion bugs (phone, placeholders, sister NAP) and serve the site.Browser checks passed. IΓÇÖll review the screenshots for layout, chips, and header Call + Book.The book-bar guests field was half-width on phones, and the hero Call button stacked on top of the sticky bar. IΓÇÖll fix both.Static demo is in this folder, GitHub PagesΓÇôready at `/river-inn-at-seaside/`.
+
+**Conversion vs the live Duda brochure**
+- Homepage now has `tel:+15037175744` in the util bar, sticky header, chips, room cards, and footer (live site had none on the homepage).
+- Sticky **Call + Book** on every page, including home; mobile bottom bar too.
+- Date bar ΓåÆ `book.html` ΓåÆ labeled Cloudbeds (`pVXpz4`). No fake rates.
+- Room cards (bed, occupancy, river/city, balcony/pet) close with Book + Call.
+- No Duda leftovers. Contact is **531 Avenue A** only.
+
+**Pages:** `index.html`, `rooms.html`, `amenities.html`, `nearby.html`, `about.html`, `book.html`, `privacy.html`, `404.html`, plus `.nojekyll`, `robots.txt`, `sitemap.xml`, `BUILD-NOTES.md`.
+
+**Facts used (live site + Cloudbeds):** NAP, `(503) 717-5744`, `info@riverinnatseaside.com`, 48 rooms, 4 PM / noon / 24/7 desk, seven room types with printed beds/views/kitchens/ADA, saltwater pool & spa, breakfast, bikes, playground, fire pits, EV, pet **$25/pet/night**, packages, 10+ groups / 315 sq ft meeting room, 48-hour cancel, 18+ check-in, nearby list.
+
+**Omitted:** nightly room rates; sister phone `(503) 738-9581` and Inn at Seaside / SaltLine; `info@amadoka.com`; unnamed ΓÇ£award-winningΓÇ¥; copied Tripadvisor quotes; scraped photos; OTA-only extras.
+
+Serve with `python -m http.server 8080`. Verified on desktop and 390px: header Call/Book, 46px sticky targets, Cloudbeds room links, hold form, JSON-LD.
