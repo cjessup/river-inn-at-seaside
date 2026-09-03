@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Seaside | River Inn at Seaside</title>
-  <meta name="description" content="One block from downtown Seaside, two blocks from the Promenade and beach. Carousel mall, aquarium, outlets, Cannon Beach and Astoria day trips.">
-  <link rel="canonical" href="https://kestrelintegrations.github.io/river-inn-at-seaside/nearby.html">
-  <meta name="theme-color" content="#16343c">
+  <meta name="description" content="Two blocks to the Prom, one block to downtown. Area guide from the inn’s destination page.">
+  <link rel="canonical" href="https://cjessup.github.io/river-inn-at-seaside/nearby.html">
+  <meta name="theme-color" content="#48545A">
   <meta property="og:title" content="Seaside | River Inn at Seaside">
-  <meta property="og:description" content="One block from downtown Seaside, two blocks from the Promenade and beach. Carousel mall, aquarium, outlets, Cannon Beach and Astoria day trips.">
+  <meta property="og:description" content="Two blocks to the Prom, one block to downtown. Area guide from the inn’s destination page.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kestrelintegrations.github.io/river-inn-at-seaside/nearby.html">
-  <meta property="og:image" content="https://kestrelintegrations.github.io/river-inn-at-seaside/assets/hero.jpg">
+  <meta property="og:url" content="https://cjessup.github.io/river-inn-at-seaside/nearby.html">
+  <meta property="og:image" content="https://cjessup.github.io/river-inn-at-seaside/assets/hero.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&amp;family=Outfit:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&amp;family=Lato:wght@400;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
@@ -26,7 +26,7 @@
     "url": "https://www.riverinnatseaside.com/",
     "telephone": "+15037175744",
     "email": "info@riverinnatseaside.com",
-    "image": "https://kestrelintegrations.github.io/river-inn-at-seaside/assets/hero.jpg",
+    "image": "https://cjessup.github.io/river-inn-at-seaside/assets/hero.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "531 Avenue A",
@@ -73,11 +73,11 @@
   </div>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="index.html">
-        <img src="assets/logo.svg" alt="">
-        <span class="logo-text">
-          <strong>River Inn</strong>
-          <span>at Seaside</span>
+      <a class="logo" href="index.html" aria-label="River Inn at Seaside">
+        <span class="wordmark">
+          <span class="wm-river">River</span>
+          <span class="wm-rule" aria-hidden="true"><i></i></span>
+          <span class="wm-inn">Inn</span>
         </span>
       </a>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
@@ -120,16 +120,18 @@
     </form>
   </div>
   <main id="main">
-    <header class="page-hero">
+    <header class="page-head">
       <div class="wrap">
-        <p class="kicker">Seaside, Oregon</p>
+        <p class="eyebrow">Seaside, Oregon</p>
+        <div class="ribbon" aria-hidden="true"><i></i></div>
         <h1>Prom, river, and a walkable downtown.</h1>
         <p>Distances below are from the inn’s own destination page.</p>
       </div>
     </header>
-    <section class="section">
+    <img class="full-bleed" src="assets/prom.jpg" alt="Seaside-style wooden promenade beside the Pacific">
+    <section class="section white">
       <div class="wrap split">
-        <div>
+        <div class="reveal">
           <p class="eyebrow">From the door</p>
           <h2>Two blocks to sand. One block to Broadway.</h2>
           <p>The inn is at 531 Avenue A, along the Necanicum River. Seaside’s 1.5-mile Promenade, Miss Oregon Pageant, and 4th of July fireworks are the town’s printed calling cards. Portland is listed as about 90 minutes inland.</p>
@@ -144,11 +146,11 @@
             <div class="mile"><span>Astoria</span><strong>25 mi N</strong></div>
           </div>
         </div>
-        <img src="assets/prom.jpg" alt="Seaside-style wooden promenade beside the Pacific">
+        <img class="reveal" src="assets/exterior-day.jpg" alt="Daytime view of a shingled inn beside the river">
       </div>
     </section>
     <section class="section alt">
-      <div class="wrap">
+      <div class="wrap reveal">
         <h2>Printed nearby list</h2>
         <p class="lede">From the inn’s destination page. We did not add sister properties or invented walk times.</p>
         <ul class="rules">
@@ -178,7 +180,11 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <h2>River Inn at Seaside</h2>
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+          <span class="wm-river">River</span>
+          <span class="wm-rule"><i></i></span>
+          <span class="wm-inn">Inn</span>
+        </div>
         <div class="nap">
           <span>531 Avenue A</span>
           <span>Seaside, OR 97138</span>

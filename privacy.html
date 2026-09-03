@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Privacy | River Inn at Seaside</title>
-  <meta name="description" content="Privacy notes for this static demo of River Inn at Seaside.">
-  <link rel="canonical" href="https://kestrelintegrations.github.io/river-inn-at-seaside/privacy.html">
-  <meta name="theme-color" content="#16343c">
+  <meta name="description" content="This static brochure demo does not process payments. The inn’s privacy statement is on the live site.">
+  <link rel="canonical" href="https://cjessup.github.io/river-inn-at-seaside/privacy.html">
+  <meta name="theme-color" content="#48545A">
   <meta property="og:title" content="Privacy | River Inn at Seaside">
-  <meta property="og:description" content="Privacy notes for this static demo of River Inn at Seaside.">
+  <meta property="og:description" content="This static brochure demo does not process payments. The inn’s privacy statement is on the live site.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kestrelintegrations.github.io/river-inn-at-seaside/privacy.html">
-  <meta property="og:image" content="https://kestrelintegrations.github.io/river-inn-at-seaside/assets/hero.jpg">
+  <meta property="og:url" content="https://cjessup.github.io/river-inn-at-seaside/privacy.html">
+  <meta property="og:image" content="https://cjessup.github.io/river-inn-at-seaside/assets/hero.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&amp;family=Outfit:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&amp;family=Lato:wght@400;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
@@ -26,7 +26,7 @@
     "url": "https://www.riverinnatseaside.com/",
     "telephone": "+15037175744",
     "email": "info@riverinnatseaside.com",
-    "image": "https://kestrelintegrations.github.io/river-inn-at-seaside/assets/hero.jpg",
+    "image": "https://cjessup.github.io/river-inn-at-seaside/assets/hero.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "531 Avenue A",
@@ -73,11 +73,11 @@
   </div>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="index.html">
-        <img src="assets/logo.svg" alt="">
-        <span class="logo-text">
-          <strong>River Inn</strong>
-          <span>at Seaside</span>
+      <a class="logo" href="index.html" aria-label="River Inn at Seaside">
+        <span class="wordmark">
+          <span class="wm-river">River</span>
+          <span class="wm-rule" aria-hidden="true"><i></i></span>
+          <span class="wm-inn">Inn</span>
         </span>
       </a>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
@@ -120,14 +120,16 @@
     </form>
   </div>
   <main id="main">
-    <header class="page-hero">
+    <header class="page-head">
       <div class="wrap">
-        <h1>Privacy</h1>
-        <p>This is a static brochure demo. It is not the inn’s live booking system.</p>
+        <p class="eyebrow">Privacy</p>
+        <div class="ribbon" aria-hidden="true"><i></i></div>
+        <h1>This is a static brochure demo.</h1>
+        <p>It is not the inn’s live booking system.</p>
       </div>
     </header>
-    <section class="section">
-      <div class="wrap prose">
+    <section class="section white">
+      <div class="wrap prose reveal">
         <p>Reservations run on Cloudbeds at hotels.cloudbeds.com. This demo does not process payments.</p>
         <p>The hold form stores your name, phone, email, and dates in this browser’s localStorage only. Nothing is emailed to the inn from this page. Call (503) 717-5744 or use Cloudbeds to actually book.</p>
         <p>Maps are loaded from Google when you open the Book page. Fonts load from Google Fonts.</p>
@@ -139,7 +141,11 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <h2>River Inn at Seaside</h2>
+        <div class="wordmark footer-wordmark" aria-hidden="true">
+          <span class="wm-river">River</span>
+          <span class="wm-rule"><i></i></span>
+          <span class="wm-inn">Inn</span>
+        </div>
         <div class="nap">
           <span>531 Avenue A</span>
           <span>Seaside, OR 97138</span>

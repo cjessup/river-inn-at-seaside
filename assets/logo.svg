@@ -1,10 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="River Inn at Seaside">
-  <rect width="64" height="64" rx="12" fill="#16343c"/>
-  <path d="M8 42c6-7 12-7 18 0s12 7 18 0 12-7 18 0" fill="none" stroke="#8ec4c9" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M8 48c6-6 12-6 18 0s12 6 18 0 12-6 18 0" fill="none" stroke="#2f6a78" stroke-width="2" stroke-linecap="round"/>
-  <path d="M18 38 V20 h28 v18" fill="none" stroke="#e6d7c0" stroke-width="2.2" stroke-linejoin="round"/>
-  <path d="M16 20 L32 10 L48 20" fill="none" stroke="#d4a85a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="28" y="26" width="8" height="12" rx="1" fill="#c45e32"/>
-  <rect x="22" y="24" width="6" height="6" fill="#8ec4c9" opacity=".85"/>
-  <rect x="36" y="24" width="6" height="6" fill="#8ec4c9" opacity=".85"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 92" role="img" aria-label="River Inn">
+  <text x="130" y="30" text-anchor="middle" fill="#ffffff" font-family="Palatino Linotype, Palatino, Georgia, 'Times New Roman', serif" font-size="17" letter-spacing="11">RIVER</text>
+  <line x1="52" y1="42" x2="118" y2="42" stroke="#B79661" stroke-width="1"/>
+  <line x1="142" y1="42" x2="208" y2="42" stroke="#B79661" stroke-width="1"/>
+  <polygon points="130,38 135,42 130,46 125,42" fill="#B79661"/>
+  <text x="130" y="78" text-anchor="middle" fill="#ffffff" font-family="Palatino Linotype, Palatino, Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="16">INN</text>
 </svg>

@@ -8,6 +8,11 @@
     cloudbeds: "https://hotels.cloudbeds.com/reservation/pVXpz4"
   };
 
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion) {
+    document.documentElement.classList.add("has-motion");
+  }
+
   var yearEls = document.querySelectorAll("[data-year]");
   var thisYear = String(new Date().getFullYear());
   yearEls.forEach(function (el) {
@@ -40,6 +45,53 @@
         document.body.classList.remove("nav-open");
       });
     });
+  }
+
+  var reveals = document.querySelectorAll(".reveal");
+  if (reduceMotion) {
+    reveals.forEach(function (el) {
+      el.classList.add("is-in");
+    });
+  } else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    reveals.forEach(function (el, i) {
+      el.style.transitionDelay = (i % 8) * 80 + "ms";
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function (el) {
+      el.classList.add("is-in");
+    });
+  }
+
+  var heroImg = document.querySelector(".hero-photo img");
+  var canParallax =
+    heroImg &&
+    !reduceMotion &&
+    window.matchMedia("(min-width: 820px)").matches;
+  if (canParallax) {
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        var y = window.scrollY;
+        if (y < window.innerHeight) {
+          heroImg.style.transform = "translate3d(0," + y * 0.22 + "px,0)";
+        }
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
   function ymdLocal(date) {

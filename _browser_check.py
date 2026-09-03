@@ -28,6 +28,13 @@ def main():
         page = browser.new_page(viewport={"width": 1280, "height": 800})
         for path in PAGES:
             page.goto(BASE + path, wait_until="networkidle", timeout=30000)
+            page.evaluate(
+                """() => document.querySelectorAll('.reveal').forEach(el => {
+                  el.style.transition = 'none';
+                  el.style.transitionDelay = '0s';
+                  el.classList.add('is-in');
+                })"""
+            )
             name = "home" if path == "/" else path.strip("/").replace(".html", "")
             page.screenshot(path=str(SHOT / f"desk-{name}.png"), full_page=True)
             vp = page.locator('meta[name="viewport"]').get_attribute("content") or ""
@@ -52,6 +59,13 @@ def main():
         page.set_viewport_size({"width": 390, "height": 844})
         for path in ["/", "/rooms.html", "/book.html", "/amenities.html"]:
             page.goto(BASE + path, wait_until="networkidle", timeout=30000)
+            page.evaluate(
+                """() => document.querySelectorAll('.reveal').forEach(el => {
+                  el.style.transition = 'none';
+                  el.style.transitionDelay = '0s';
+                  el.classList.add('is-in');
+                })"""
+            )
             name = "home" if path == "/" else path.strip("/").replace(".html", "")
             page.screenshot(path=str(SHOT / f"mobile-{name}.png"), full_page=True)
             bar = page.locator(".mobile-cta")

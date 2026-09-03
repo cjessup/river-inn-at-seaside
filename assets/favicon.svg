@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#16343c"/>
-  <path d="M4 22c4-5 8-5 12 0s8 5 12 0" fill="none" stroke="#8ec4c9" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M9 18 V10 h14 v8" fill="none" stroke="#e6d7c0" stroke-width="1.6"/>
-  <path d="M8 10 L16 5 L24 10" fill="none" stroke="#d4a85a" stroke-width="1.6" stroke-linecap="round"/>
-  <rect x="14" y="12" width="4" height="6" fill="#c45e32"/>
+  <rect width="32" height="32" rx="3" fill="#48545A"/>
+  <text x="16" y="13" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="6" letter-spacing="1.6">RIVER</text>
+  <line x1="8" y1="16.5" x2="14" y2="16.5" stroke="#B79661" stroke-width="0.7"/>
+  <line x1="18" y1="16.5" x2="24" y2="16.5" stroke="#B79661" stroke-width="0.7"/>
+  <polygon points="16,15 17.4,16.5 16,18 14.6,16.5" fill="#B79661"/>
+  <text x="16" y="27" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="9" letter-spacing="2">INN</text>
 </svg>
